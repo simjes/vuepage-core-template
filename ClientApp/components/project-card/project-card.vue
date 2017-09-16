@@ -1,5 +1,5 @@
 ﻿<template>
-	<div class="project-card">
+	<div class="project-card" @click="openProjectDetails()">
 		<div class="thumbnail text-center ">
 			<img src="https://unsplash.it/1000/?random" alt="..." />
 			<h5>{{project.title}}</h5>

@@ -20,7 +20,8 @@ module.exports = (env) => {
 				'jquery',
 				'vue',
 				'vue-router',
-				'vue-parallaxy'
+				'vue-parallaxy',
+				'vue-js-modal'
 			]
 		},
 		module: {
