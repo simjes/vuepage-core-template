@@ -5,3 +5,8 @@
 	left: 0; 
 	width: 100%; 
 }
+
+.checkbox-custom {
+	display: inline-block;
+	margin-left: 20px;
+}

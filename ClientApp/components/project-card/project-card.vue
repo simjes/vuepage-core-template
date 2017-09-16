@@ -5,4 +5,4 @@
 </template>
 
 <script src="./project-card.ts"></script>
-<style src="./project-card.css" />
+<style src="./project-card.css"></style>

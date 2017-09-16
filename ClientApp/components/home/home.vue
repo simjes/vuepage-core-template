@@ -7,30 +7,39 @@
 		
 		<!-- TODO: fix parallax stuff-->
 		<div style="margin-top:500px;">
-			<label class="checkbox" for="checkbox1">
-				<input type="checkbox" data-toggle="checkbox" value="" id="checkbox1" v-model="showMobile" />
-					Mobile
-			</label>
-			<label class="checkbox" for="checkbox2">
-				<input type="checkbox" data-toggle="checkbox" checked="checked" value="" id="checkbox2" v-model="showWeb" />
-					Web
-			</label>
-			<label class="checkbox" for="checkbox3">
-				<input type="checkbox" data-toggle="checkbox" value="" id="checkbox3" v-model="showBackend" />
-					Backend
-			</label>
-			<label class="checkbox" for="checkbox4">
-				<input type="checkbox" data-toggle="checkbox" checked="checked" value="" id="checkbox4" v-model="showOthers" />
-					Other
-			</label>
-			
+			<!-- Might make these components in the future for easier additions, but atm YAGNI -->
+			<div class="row text-right">
+				<div class="checkbox-custom">
+					<label class="checkbox" for="mobileCheckbox">
+						<input type="checkbox" data-toggle="checkbox" id="mobileCheckbox" v-model="showMobile" />
+						Mobile
+					</label>
+				</div>
+				<div class="checkbox-custom">
+					<label class="checkbox" for="webCheckbox">
+						<input type="checkbox" data-toggle="checkbox" id="webCheckbox" v-model="showWeb" />
+						Web
+					</label>
+				</div>
+				<div class="checkbox-custom">
+					<label class="checkbox" for="backendCheckbox">
+						<input type="checkbox" data-toggle="checkbox" id="backendCheckbox" v-model="showBackend" />
+						Backend
+					</label>
+				</div>
+				<div class="checkbox-custom">
+					<label class="checkbox" for="othersCheckbox">
+						<input type="checkbox" data-toggle="checkbox" id="othersCheckbox" v-model="showOthers" />
+						Other
+					</label>
+				</div>
+			</div>
 			<div class="row">
 				<project-card v-for="project in filteredProjects" 
 							  :project="project" 
 							  :key="project.id"
 							  class="col-xs-12 col-sm-6 col-md-4 col-lg-3"></project-card>
 			</div>
-
 			<h1 >Hello, world!</h1>
 			<p>Welcome todsadsdasd your new single-page application, built with:</p>
 			<ul>
@@ -50,4 +59,4 @@
 	</div>
 </template>
 <script src="./home.ts"></script>
-<style src="./home.css" />
+<style src="./home.css"></style>

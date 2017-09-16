@@ -38,5 +38,3 @@ export default class HomeComponent extends Vue {
 		});
 	}
 }
-
-//TODO export to file
