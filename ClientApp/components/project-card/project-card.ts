@@ -2,6 +2,8 @@
 import { Component, Prop  } from 'vue-property-decorator';
 import {IProject} from "../../helpers/IProject";
 
+
+
 @Component
 export default class ProjectCardComponent extends Vue {
 	
@@ -10,6 +12,6 @@ export default class ProjectCardComponent extends Vue {
 
 
 	openProjectDetails() {
-		
+		console.log(Vue);
 	}
 }
