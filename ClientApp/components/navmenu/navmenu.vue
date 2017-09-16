@@ -1,6 +1,6 @@
 <template>
-    <div class="main-nav">
-        <div class="navbar navbar-inverse">
+    <div class="navbar-container">
+        <div class="navbar navbar-inverse navbar-fixed-top">
             <div class="navbar-header">
                 <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
                     <span class="sr-only">Toggle navigation</span>
@@ -10,7 +10,7 @@
                 </button>
                 <a class="navbar-brand" href="/">SimFolio</a>
             </div>
-            <div class="clearfix"></div>
+            <!--<div class="clearfix"></div>-->
             <div class="navbar-collapse collapse">
                 <ul class="nav navbar-nav">
                     <li>

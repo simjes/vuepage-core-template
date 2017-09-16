@@ -574,6 +574,11 @@
       "resolved": "https://registry.npmjs.org/des.js/-/des.js-1.0.0.tgz",
       "dev": true
     },
+    "designmodo-flat-ui": {
+      "version": "2.3.0",
+      "from": "designmodo-flat-ui@latest",
+      "resolved": "https://registry.npmjs.org/designmodo-flat-ui/-/designmodo-flat-ui-2.3.0.tgz"
+    },
     "diffie-hellman": {
       "version": "5.0.2",
       "from": "diffie-hellman@>=5.0.0 <6.0.0",
