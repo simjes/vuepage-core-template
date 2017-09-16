@@ -2396,6 +2396,11 @@
       "resolved": "https://registry.npmjs.org/vue-loader/-/vue-loader-11.3.4.tgz",
       "dev": true
     },
+    "vue-parallaxy": {
+      "version": "1.0.3",
+      "from": "vue-parallaxy@latest",
+      "resolved": "https://registry.npmjs.org/vue-parallaxy/-/vue-parallaxy-1.0.3.tgz"
+    },
     "vue-property-decorator": {
       "version": "5.1.0",
       "from": "vue-property-decorator@>=5.0.1 <6.0.0",

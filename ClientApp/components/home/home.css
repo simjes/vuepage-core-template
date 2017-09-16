@@ -1,0 +1,7 @@
+﻿#parallax-custom {
+	min-height: 200px;
+	max-height: 500px;
+	position: absolute; 
+	left: 0; 
+	width: 100%; 
+}
