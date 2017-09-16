@@ -18,7 +18,15 @@ export default class HomeComponent extends Vue {
 		{ id: 1, title: "mobile", type: ProjectType.Mobile },
 		{ id: 2, title: "web", type: ProjectType.Web },
 		{ id: 3, title: "backend", type: ProjectType.Backend },
-		{ id: 4, title: "other", type: ProjectType.Others }
+		{ id: 4, title: "other", type: ProjectType.Others },
+		{ id: 5, title: "mobile", type: ProjectType.Mobile },
+		{ id: 6, title: "web", type: ProjectType.Web },
+		{ id: 7, title: "backend", type: ProjectType.Backend },
+		{ id: 8, title: "other", type: ProjectType.Others },
+		{ id: 9, title: "mobile", type: ProjectType.Mobile },
+		{ id: 10, title: "web", type: ProjectType.Web },
+		{ id: 11, title: "backend", type: ProjectType.Backend },
+		{ id: 12, title: "other", type: ProjectType.Others }
 	];
 
 	get filteredProjects() {
@@ -36,5 +44,12 @@ export default class HomeComponent extends Vue {
 				return true;
 			}
 		});
+	}
+
+	get noProjects() {
+		if (this.projects.length < 1) {
+			return true;
+		}
+		return !this.showMobile && !this.showWeb && !this.showBackend && !this.showOthers;
 	}
 }
