@@ -2,6 +2,10 @@
 	padding: 15px 100px;
 }
 
+.project-image {
+	border-radius: 6px;
+}
+
 @media (min-width: 768px ) {
 	.project-card {
 		padding: 15px;

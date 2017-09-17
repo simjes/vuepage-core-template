@@ -20,4 +20,4 @@
 </template>
 
 <script src="./project-details-modal.ts"></script>
-<style src="./project-details-modal.css"></style>
+<style src="./project-details-modal.css" scoped></style>
