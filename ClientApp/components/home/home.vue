@@ -1,7 +1,7 @@
 <template>
 	<div>
 		<parallax id="parallax-custom">
-			<img src="https://unsplash.it/1000/500/?image=0" alt="very cool bg" />
+			<img src="https://unsplash.it/1000/500/?image=0" alt="parallax image" />
 		</parallax>
 		<br />
 		
