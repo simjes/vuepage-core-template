@@ -26,7 +26,6 @@
   },
   "dependencies": {
     "designmodo-flat-ui": "^2.3.0",
-    "vue-js-modal": "^1.2.11",
     "vue-parallaxy": "^1.0.3"
   }
 }

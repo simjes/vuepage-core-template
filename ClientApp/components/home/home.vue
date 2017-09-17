@@ -40,9 +40,12 @@
 				<project-card v-for="project in filteredProjects" 
 							  :project="project" 
 							  :key="project.id"
+							  data-toggle="modal" data-target="#projectModal"
+							  @clickedProject="setProject"
 							  class="col-xs-12 col-sm-6 col-md-4 col-lg-3"></project-card>
 			</div>
 		</div>
+		<project-details-modal :project="projectDetails"></project-details-modal>
 	</div>
 </template>
 <script src="./home.ts"></script>

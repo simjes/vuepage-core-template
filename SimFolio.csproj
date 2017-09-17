@@ -12,7 +12,6 @@
     <None Remove="ClientApp\components\project-card\project-card.ts" />
     <None Remove="ClientApp\helpers\IProject.ts" />
     <None Remove="ClientApp\helpers\ProjectTypes.ts" />
-    <None Remove="sfc.d.ts" />
   </ItemGroup>
 
   <ItemGroup>
@@ -28,7 +27,6 @@
     <TypeScriptCompile Include="ClientApp\components\project-card\project-card.ts" />
     <TypeScriptCompile Include="ClientApp\helpers\IProject.ts" />
     <TypeScriptCompile Include="ClientApp\helpers\ProjectTypes.ts" />
-    <TypeScriptCompile Include="sfc.d.ts" />
   </ItemGroup>
 
   <Target Name="DebugRunWebpack" BeforeTargets="Build" Condition=" '$(Configuration)' == 'Debug' And !Exists('wwwroot\dist') ">

@@ -1,14 +1,21 @@
 ﻿import Vue from 'vue';
 import { Component } from 'vue-property-decorator';
 import ProjectCard from '../project-card/project-card.vue';
+import ProjectDetailsModal from '../project-details-modal/project-details-modal.vue';
 import {ProjectType} from "../../helpers/ProjectTypes";
 import {IProject} from "../../helpers/IProject";
 var Parallax = require('vue-parallaxy');
+declare var $: any;
 
 @Component({
-	components: { Parallax, ProjectCard }
+	components: { Parallax, ProjectCard, ProjectDetailsModal }
 })
 export default class HomeComponent extends Vue {
+	projectDetails: IProject = {
+		id: 0,
+		title: "",
+		type: ProjectType.Others
+	};
 	showMobile = true;
 	showWeb = true;
 	showBackend = true;
@@ -51,5 +58,9 @@ export default class HomeComponent extends Vue {
 			return true;
 		}
 		return !this.showMobile && !this.showWeb && !this.showBackend && !this.showOthers;
+	}
+
+	setProject(project) {
+		this.projectDetails = project;
 	}
 }

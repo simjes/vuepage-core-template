@@ -2,16 +2,9 @@
 import { Component, Prop } from 'vue-property-decorator';
 import {IProject} from "../../helpers/IProject";
 
-
-
 @Component
-export default class ProjectCardComponent extends Vue {
-	
-	@Prop({})
+export default class ProjectDetailsModalComponent extends Vue {
+	@Prop() 
 	project: IProject;
-
-
-	emitProjectDetails(event) {
-		this.$emit('clickedProject', this.project);
-	}
+	
 }

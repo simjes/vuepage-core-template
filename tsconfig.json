@@ -6,7 +6,7 @@
 		"moduleResolution": "node",
 		"target": "es5",
 		"sourceMap": true,
-					"skipDefaultLibCheck": true,
+		"skipDefaultLibCheck": true,
 					"noImplicitAny": false,
 		"strict": true,
 		"types": [ "webpack-env" ],
@@ -21,6 +21,6 @@
 		"node_modules"
 	],
 	"include": [
-		"sfc.d.ts"
+		"typings"
 	]
 }
