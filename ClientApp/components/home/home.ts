@@ -5,7 +5,6 @@ import ProjectDetailsModal from '../project-details-modal/project-details-modal.
 import {ProjectType} from "../../helpers/ProjectTypes";
 import {IProject} from "../../helpers/IProject";
 var Parallax = require('vue-parallaxy');
-declare var $: any;
 
 @Component({
 	components: { Parallax, ProjectCard, ProjectDetailsModal }
