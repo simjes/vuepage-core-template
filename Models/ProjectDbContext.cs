@@ -9,5 +9,7 @@ namespace SimFolio.Models
 		}
 
 		public DbSet<Project> Projects { get; set; }
+		public DbSet<Tag> Tags { get; set; }
+		public DbSet<UrlLocation> UrlLocations { get; set; }
 	}
 }

@@ -23,8 +23,9 @@ namespace SimFolio
 			services.AddDbContext<ProjectDbContext>(options =>
 				options.UseSqlServer(Configuration.GetConnectionString("DefaultConnection")));
 
-
 			services.AddMvc();
+
+			services.AddScoped<IProjectService, ProjectService>();
 		}
 
 		// This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
