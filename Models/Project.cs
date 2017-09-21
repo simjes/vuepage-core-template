@@ -12,7 +12,7 @@ namespace SimFolio.Models
 		public string ImageUrl { get; set; }
 		public string ThumbnailUrl { get; set; }
 		public ICollection<UrlLocation> UrlLocation { get; set; }
-		public ICollection<string> Tags { get; set; }
+		public ICollection<Tag> Tags { get; set; }
 		public ProjectType ProjectType { get; set; }
 
 	}
