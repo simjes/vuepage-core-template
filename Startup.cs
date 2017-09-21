@@ -5,6 +5,7 @@ using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using SimFolio.Models;
+using SimFolio.Services;
 
 namespace SimFolio
 {

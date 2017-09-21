@@ -1,4 +1,5 @@
 ﻿using Microsoft.AspNetCore.Mvc;
+using SimFolio.Services;
 
 namespace SimFolio.Controllers
 {
@@ -24,9 +25,11 @@ namespace SimFolio.Controllers
 
 		// GET: api/Project/5
 		[HttpGet("{id}", Name = "Get")]
-		public string Get(int id)
+		public IActionResult Get(int id)
 		{
-			return "value";
+			var project = _projectService.GetProject(id);
+
+			return Ok(project);
 		}
 
 		// POST: api/Project
