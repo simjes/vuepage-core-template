@@ -1,9 +1,9 @@
 ﻿<template>
 	<div class="project-card" @click="emitProjectDetails($event)">
 		<!-- TODO: replace attributes with event emit to parent? -->
-		<div class="thumbnail text-center" data-toggle="modal" data-target="#projectModal">
-			<img class="project-image" src="https://unsplash.it/1000/1000/?random" alt="project image" />
-			<h5>{{project.title}}</h5>
+		<div class="thumbnail text-center project-card-content" data-toggle="modal" data-target="#projectModal">
+			<img class="project-image" :src="project.thumbnailUrl" alt="project image" />
+			<h6 class="project-card-title">{{project.title}}</h6>
 		</div>
 	</div>
 </template>

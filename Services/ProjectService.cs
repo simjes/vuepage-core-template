@@ -21,7 +21,7 @@ namespace SimFolio.Services
 
 		public ICollection<Project> GetAllProjects()
 		{
-			return _context.Projects.Include(p => p.Tags).Include(p => p.UrlLocation).ToList();
+			return _context.Projects.Include(p => p.Tags).Include(p => p.UrlLocation).OrderByDescending(p => p.StartDateTime).ToList();
 		}
 
 		public Project GetProject(int id)

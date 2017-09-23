@@ -7,8 +7,14 @@
 					<h4 class="modal-title" id="projectTitle">{{project.title}}</h4>
 				</div>
 				<div class="modal-body">
-					<img class="project-details-image" src="https://unsplash.it/1000/500/?random" />
+					<img class="project-details-image" :src="project.imageUrl" />
+					{{project.description}}
+					<!--TODO: this is for dev-->
+					<br />
+					<br />
+					<br />
 					{{project}}
+					<!--TODO: this is for dev-->
 				</div>
 				<div class="modal-footer">
 					<button type="button" class="btn btn-default" data-dismiss="modal">Close</button>

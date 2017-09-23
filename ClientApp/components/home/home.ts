@@ -16,34 +16,28 @@ export default class HomeComponent extends Vue {
 	projectDetails: IProject = {
 		id: 0,
 		title: "",
-		type: ProjectType.Others
+		description: "",
+		imageUrl: "",
+		thumbnailUrl: "",
+		startDateTime: "",
+		tags: [], 
+		urlLocation: [], 
+		projectType: ProjectType.Others
 	};
 	showMobile = true;
 	showWeb = true;
 	showBackend = true;
 	showOthers = true;
-
-	projects: IProject[] =  [
-		{ id: 1, title: "mobile", type: ProjectType.Mobile },
-		{ id: 2, title: "web", type: ProjectType.Web },
-		{ id: 3, title: "backend", type: ProjectType.Backend },
-		{ id: 4, title: "other", type: ProjectType.Others },
-		{ id: 5, title: "mobile", type: ProjectType.Mobile },
-		{ id: 6, title: "web", type: ProjectType.Web },
-		{ id: 7, title: "backend", type: ProjectType.Backend },
-		{ id: 8, title: "other", type: ProjectType.Others },
-		{ id: 9, title: "mobile", type: ProjectType.Mobile },
-		{ id: 10, title: "web", type: ProjectType.Web },
-		{ id: 11, title: "backend", type: ProjectType.Backend },
-		{ id: 12, title: "other", type: ProjectType.Others }
-	];
+	
+	projects: IProject[] = [];
 
 	created() {
 		axios.get(`/api/project`)
 			.then(response => {
 				// JSON responses are automatically parsed.
-				store.commit('addProjects', response);
-				console.log(response);
+				store.commit('addProjects', response.data);
+				this.projects = response.data;
+				console.log(response.data);
 			})
 			.catch(e => {
 				console.log(e);
@@ -52,7 +46,7 @@ export default class HomeComponent extends Vue {
 
 	get filteredProjects() {
 		return this.projects.filter((project) => {
-			switch (project.type) {
+			switch (project.projectType) {
 			case ProjectType.Mobile:
 				return this.showMobile;
 			case ProjectType.Web:
