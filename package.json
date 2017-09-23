@@ -25,7 +25,9 @@
     "webpack-hot-middleware": "^2.12.2"
   },
   "dependencies": {
+    "axios": "^0.16.2",
     "designmodo-flat-ui": "^2.3.0",
-    "vue-parallaxy": "^1.0.3"
+    "vue-parallaxy": "^1.0.3",
+    "vuex": "^2.4.0"
   }
 }

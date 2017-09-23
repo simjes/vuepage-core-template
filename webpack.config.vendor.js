@@ -19,8 +19,10 @@ module.exports = (env) => {
 				'isomorphic-fetch',
 				'jquery',
 				'vue',
+				'vuex',
 				'vue-router',
-				'vue-parallaxy'
+				'vue-parallaxy',
+				'axios'
 			]
 		},
 		module: {

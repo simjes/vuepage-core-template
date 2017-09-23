@@ -3,8 +3,11 @@ import { Component } from 'vue-property-decorator';
 import ProjectCard from '../project-card/project-card.vue';
 import ProjectDetailsModal from '../project-details-modal/project-details-modal.vue';
 import {ProjectType} from "../../helpers/ProjectTypes";
-import {IProject} from "../../helpers/IProject";
+import { IProject } from "../../helpers/IProject";
+import axios from 'axios';
 var Parallax = require('vue-parallaxy');
+
+declare var store: any;
 
 @Component({
 	components: { Parallax, ProjectCard, ProjectDetailsModal }
@@ -34,6 +37,18 @@ export default class HomeComponent extends Vue {
 		{ id: 11, title: "backend", type: ProjectType.Backend },
 		{ id: 12, title: "other", type: ProjectType.Others }
 	];
+
+	created() {
+		axios.get(`/api/project`)
+			.then(response => {
+				// JSON responses are automatically parsed.
+				store.commit('addProjects', response);
+				console.log(response);
+			})
+			.catch(e => {
+				console.log(e);
+			});
+	}
 
 	get filteredProjects() {
 		return this.projects.filter((project) => {
