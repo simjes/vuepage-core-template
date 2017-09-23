@@ -98,7 +98,7 @@ namespace SimFolio.Models
 					},
 					ProjectType = ProjectType.Mobile
 				},
-				new Project {Title = "Organisation Unit Manager", Description = "WebApp for DHIS2. Can be used to browse, edit and add organisational units in DHIS2.", ImageUrl = "https://i.imgur.com/4kUsQAS.jpg", ThumbnailUrl = "https://i.imgur.com/4kUsQASl.jpg", StartDateTime = new DateTime(2015, 12, 8),
+				new Project {Title = "Org Unit Manager", Description = "WebApp for DHIS2. Can be used to browse, edit and add organisational units in DHIS2.", ImageUrl = "https://i.imgur.com/4kUsQAS.jpg", ThumbnailUrl = "https://i.imgur.com/4kUsQASl.jpg", StartDateTime = new DateTime(2015, 12, 8),
 					Tags = new List<Tag>{ new Tag{Name = "DHIS2 WebApp" },new Tag{Name = "AngularJS" }, new Tag{Name = "DHIS2 API" } },
 					UrlLocation = new List<UrlLocation>
 					{
@@ -151,7 +151,7 @@ namespace SimFolio.Models
 					},
 					ProjectType = ProjectType.Others
 				},
-				new Project {Title = "Photo Viewer", Description = "A desktop application that can be used to view and upload pictures to a server, as well as edit metadata of the pictures. The pictures can be filtered by metadata and by the folders they are located in. The server uses a SQLite database to keep track of all the information.", ImageUrl = "https://i.imgur.com/nWftgII.png", ThumbnailUrl = "https://i.imgur.com/nWftgIIl.png", StartDateTime = new DateTime(2015, 5, 12),
+				new Project {Title = "Photo Viewer", Description = "A desktop application that can be used to view and upload pictures to a server, as well as edit metadata of the pictures. The pictures can be filtered by metadata and by the folders they are located in. The server uses a SQLite database to keep track of all the information.", ImageUrl = "https://i.imgur.com/nWftgII.png", ThumbnailUrl = "https://i.imgur.com/nWftgIIl.png", StartDateTime = new DateTime(2014, 1, 12),
 					Tags = new List<Tag>{ new Tag{Name = "Java" },new Tag{Name = "Hibernate" }, new Tag{Name = "SQLite" } },
 					UrlLocation = new List<UrlLocation>
 					{

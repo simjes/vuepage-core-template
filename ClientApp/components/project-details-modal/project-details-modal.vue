@@ -7,18 +7,23 @@
 					<h4 class="modal-title" id="projectTitle">{{project.title}}</h4>
 				</div>
 				<div class="modal-body">
-					<img class="project-details-image" :src="project.imageUrl" />
+					<div class="text-center">
+						<img class="project-details-image" :src="project.imageUrl" />
+					</div>
+					
 					{{project.description}}
-					<!--TODO: this is for dev-->
+					<!--TODO: this is for dev
 					<br />
 					<br />
 					<br />
 					{{project}}
-					<!--TODO: this is for dev-->
+					TODO: this is for dev-->
 				</div>
 				<div class="modal-footer">
-					<button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
-					<button type="button" class="btn btn-primary">Send message</button>
+					<div class="label-location" v-for="link in project.urlLocation">
+						<!-- TODO: style -->
+						<a :href="link.url" target="_blank"><span class="label label-default">{{link.name}}</span></a>
+					</div>
 				</div>
 			</div>
 		</div>

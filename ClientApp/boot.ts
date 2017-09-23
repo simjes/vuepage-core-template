@@ -2,10 +2,13 @@ import './css/site.css';
 import 'bootstrap';
 import Vue from 'vue';
 import Vuex from 'vuex'
+import * as jQuery from 'jquery';
 import VueRouter from 'vue-router';
 import Home from './components/home/home.vue';
 import Counter from './components/counter/counter.vue';
 import FetchData from './components/fetchdata/fetchdata.vue';
+
+declare var $: any;
 
 Vue.use(VueRouter);
 Vue.use(Vuex);
@@ -34,6 +37,8 @@ const store = new Vuex.Store({
 
 //Not good practice, but gives me global access to the store without typescript hassle
 window['store'] = store;
+window['$'] = jQuery;
+window['jQuery'] = jQuery;
 
 new Vue({
 	el: '#app-root',

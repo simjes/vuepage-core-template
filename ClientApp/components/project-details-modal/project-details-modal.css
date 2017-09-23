@@ -1,8 +1,13 @@
 ﻿.modal-custom {
-	margin-top: 50%;
+	/*margin-top: 50%;*/
+}
 
+.label-location {
+	display: inline-block;
+	padding: 0 5px;
 }
 
 .project-details-image {
-	max-width:100%;
+	max-width: 100%;
+	max-height: 50vh;
 }

@@ -8,6 +8,7 @@ import axios from 'axios';
 var Parallax = require('vue-parallaxy');
 
 declare var store: any;
+declare var $: any;
 
 @Component({
 	components: { Parallax, ProjectCard, ProjectDetailsModal }
@@ -42,6 +43,7 @@ export default class HomeComponent extends Vue {
 			.catch(e => {
 				console.log(e);
 			});
+		//$(':checkbox').radiocheck();
 	}
 
 	get filteredProjects() {
