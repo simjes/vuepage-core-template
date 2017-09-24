@@ -46,6 +46,12 @@ export default class HomeComponent extends Vue {
 		//$(':checkbox').radiocheck();
 	}
 
+	beforeDestroy() {
+		$('#projectModal').modal('hide');
+		$("body").removeClass("modal-open");
+		$('.modal-backdrop').remove();
+	}
+
 	get filteredProjects() {
 		return this.projects.filter((project) => {
 			switch (project.projectType) {
