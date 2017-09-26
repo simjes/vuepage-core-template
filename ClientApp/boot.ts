@@ -13,7 +13,6 @@ declare var $: any;
 Vue.use(VueRouter);
 Vue.use(Vuex);
 
-
 const routes = [
 	{ path: '/', component: Home },
 	{ path: '/counter', component: Counter },
@@ -40,8 +39,8 @@ window['store'] = store;
 window['$'] = jQuery;
 window['jQuery'] = jQuery;
 
-new Vue({
+var vue = new Vue({
 	el: '#app-root',
 	router: new VueRouter({ mode: 'history', routes: routes }),
-	render: h => h(require('./components/app/app.vue'))
+	render: h => h(require('./components/app/app.vue')),
 });

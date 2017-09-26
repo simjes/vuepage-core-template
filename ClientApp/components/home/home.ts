@@ -10,7 +10,8 @@ var Parallax = require('vue-parallaxy');
 declare var store: any;
 declare var $: any;
 
-@Component({
+@
+Component({
 	components: { Parallax, ProjectCard, ProjectDetailsModal }
 })
 export default class HomeComponent extends Vue {
@@ -25,6 +26,7 @@ export default class HomeComponent extends Vue {
 		urlLocation: [], 
 		projectType: ProjectType.Others
 	};
+	showModal = false;
 	showMobile = true;
 	showWeb = true;
 	showBackend = true;
@@ -38,7 +40,6 @@ export default class HomeComponent extends Vue {
 				// JSON responses are automatically parsed.
 				store.commit('addProjects', response.data);
 				this.projects = response.data;
-				console.log(response.data);
 			})
 			.catch(e => {
 				console.log(e);
@@ -78,5 +79,6 @@ export default class HomeComponent extends Vue {
 
 	setProject(project) {
 		this.projectDetails = project;
+		this.showModal = true;
 	}
 }

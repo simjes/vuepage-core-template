@@ -15,6 +15,7 @@
     <None Remove="ClientApp\helpers\Tag.ts" />
     <None Remove="ClientApp\helpers\UrlLocation.ts" />
     <None Remove="tempProjectjson.ts" />
+    <None Remove="typings\global.d.ts" />
   </ItemGroup>
 
   <ItemGroup>
@@ -35,6 +36,7 @@
     <TypeScriptCompile Include="ClientApp\helpers\Tag.ts" />
     <TypeScriptCompile Include="ClientApp\helpers\UrlLocation.ts" />
     <TypeScriptCompile Include="tempProjectjson.ts" />
+    <TypeScriptCompile Include="typings\global.d.ts" />
   </ItemGroup>
 
   <ItemGroup>
