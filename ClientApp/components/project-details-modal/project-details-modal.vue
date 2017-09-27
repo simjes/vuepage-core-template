@@ -6,30 +6,27 @@
 					<div class="modal-container">
 
 						<div class="modal-header">
-							<slot name="header">
-								default header
-							</slot>
+							<button type="button" class="close" @click="$emit('close')" aria-label="Close" ><span aria-hidden="true">&times;</span></button>
+							<h3>{{project.title}}</h3>
 						</div>
 
 						<div class="modal-body">
-							<slot name="body">
-								default body
-							</slot>
+							<div class="text-center">
+								<img class="project-details-image" :src="project.imageUrl" />
+							</div>
+							{{project.description}}
 						</div>
 
 						<div class="modal-footer">
-							<slot name="footer">
-								default footer
-								<button class="modal-default-button" @click="$emit('close')">
-									OK
-								</button>
-							</slot>
+							<div class="label-location" v-for="link in project.urlLocation">
+								<!-- TODO: style -->
+								<a :href="link.url" target="_blank"><span class="label label-default">{{link.name}}</span></a>
+							</div>
 						</div>
 					</div>
 				</div>
 			</div>
-		</transition>
-		
+		</transition>		
 	</div>
 </template>
 
