@@ -2,7 +2,7 @@
 	<div id="modal-template">
 		<transition name="modal">
 			<div class="modal-mask">
-				<div class="modal-wrapper">
+				<div class="modal-wrapper" @click.self="$emit('close')">
 					<div class="modal-container">
 
 						<div class="modal-header">
@@ -14,14 +14,21 @@
 							<div class="text-center">
 								<img class="project-details-image" :src="project.imageUrl" />
 							</div>
-							{{project.description}}
-						</div>
-
-						<div class="modal-footer">
-							<div class="label-location" v-for="link in project.urlLocation">
-								<!-- TODO: style -->
-								<a :href="link.url" target="_blank"><span class="label label-default">{{link.name}}</span></a>
+							<div class="description-container">
+								{{project.description}}
 							</div>
+							<div class="tag-container">
+								Tags:
+								<div v-for="tag in project.tags" class="tag">
+									<span class="tag-name">{{tag.name}}</span>
+								</div>
+							</div>
+							<div class="text-right">
+								<div class="label-location" v-for="link in project.urlLocation">
+									<!-- TODO: style -->
+									<a :href="link.url" target="_blank"><span class="label label-default label-custom">{{link.name}}</span></a>
+								</div>
+							</div>								
 						</div>
 					</div>
 				</div>

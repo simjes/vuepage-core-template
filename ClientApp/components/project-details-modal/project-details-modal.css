@@ -3,6 +3,28 @@
 	padding: 0 5px;
 }
 
+.tag {
+	display: inline-block;
+}
+
+.tag-name {
+	padding:  0 10px;
+}
+
+.tag-container {
+	margin-top: 15px;
+	font-size: 15px;
+}
+
+.description-container {
+	margin-top: 10px;
+}
+
+.label-custom {
+	padding: 10px;
+	border-radius: 4px;
+}
+
 .project-details-image {
 	max-width: 100%;
 	max-height: 50vh;
