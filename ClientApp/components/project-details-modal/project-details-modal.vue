@@ -1,10 +1,9 @@
 ﻿<template>
 	<div id="modal-template">
-		<transition name="modal">
+		<transition name="modal" >
 			<div class="modal-mask">
-				<div class="modal-wrapper" @click.self="$emit('close')">
-					<div class="modal-container">
-
+				<div class="modal-wrapper" @click.self="$emit('close')" >
+					<div id="modal-holder" class="modal-container" v-on:keyup.esc="$emit('close')" tabindex="-1">
 						<div class="modal-header">
 							<button type="button" class="close" @click="$emit('close')" aria-label="Close" ><span aria-hidden="true">&times;</span></button>
 							<h3>{{project.title}}</h3>
