@@ -10,8 +10,7 @@ var Parallax = require('vue-parallaxy');
 declare var store: any;
 declare var $: any;
 
-@
-Component({
+@Component({
 	components: { Parallax, ProjectCard, ProjectDetailsModal }
 })
 export default class HomeComponent extends Vue {
