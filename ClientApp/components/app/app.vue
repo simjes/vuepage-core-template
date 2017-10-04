@@ -10,4 +10,5 @@
 </template>
 
 <script src="./app.ts"></script>
+<link src="./app.css" rel="stylesheet"/>
 

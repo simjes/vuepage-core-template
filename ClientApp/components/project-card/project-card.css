@@ -14,6 +14,13 @@
 	white-space: nowrap;
 	overflow: hidden;
 	text-overflow: ellipsis;
+	background-color: #2c2c36;
+	border-color: #2c2c36;
+	padding: 10px 10px 0 10px;
+}
+
+.project-card-title {
+	color: white;
 }
 
 @media (min-width: 768px ) {
