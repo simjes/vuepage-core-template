@@ -1,6 +1,6 @@
 <template>
 	<div class="navbar-container">
-		<div class="navbar navbar-inverse navbar-fixed-top">
+		<div class="navbar navbar-fixed-top navbar-inverse navbar-custom">
 			<div class="navbar-header">
 				<button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
 					<span class="sr-only">Toggle navigation</span>
@@ -8,29 +8,20 @@
 					<span class="icon-bar"></span>
 					<span class="icon-bar"></span>
 				</button>
-				<a class="navbar-brand" href="/">SimFolio</a>
+				<a id="brand-name" class="navbar-brand" href="/">SimFolio</a>
 			</div>
 			<!--<div class="clearfix"></div>-->
 			<div class="navbar-collapse collapse">
 				<ul class="nav navbar-nav">
 					<li>
 						<router-link to="/" :exact="true">
-							<span class="glyphicon glyphicon-home"></span> Home
+							<span class="navbar-custom-text"><span class="glyphicon glyphicon-home"></span> Home</span>
+							
 						</router-link>
 					</li>
 					<li>
 						<router-link to="/about">
-							<span class="glyphicon glyphicon-education"></span> About
-						</router-link>
-					</li>
-					<li>
-						<router-link to="/counter">
-							<span class="glyphicon glyphicon-education"></span> Counter
-						</router-link>
-					</li>
-					<li>
-						<router-link to="/fetchdata">
-							<span class="glyphicon glyphicon-th-list"></span> Fetch data
+							<span class="navbar-custom-text"><span class="glyphicon glyphicon-user"></span> About</span>								
 						</router-link>
 					</li>
 				</ul>

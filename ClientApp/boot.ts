@@ -15,9 +15,7 @@ Vue.use(Vuex);
 
 const routes = [
 	{ path: '/', component: Home },
-	{ path: '/about', component: AboutComponent},
-	{ path: '/counter', component: Counter },
-	{ path: '/fetchdata', component: FetchData }
+	{ path: '/about', component: AboutComponent}
 ];
 
 const store = new Vuex.Store({

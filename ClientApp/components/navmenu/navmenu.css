@@ -10,6 +10,11 @@
 	color: white;
 }
 
+.navbar-custom {
+	background: linear-gradient(141deg, #FF4E50 0%, #F9D423 85%);
+	/*background: linear-gradient(141deg, #0fb8ad 0%, #1fc8db 51%, #2cb5e8 75%);*/
+}
+
 
 @media (min-width: 768px) {
 	/* On small screens, convert the nav menu to a vertical sidebar */
@@ -52,4 +57,16 @@
 	.navbar-container {
 		margin-bottom: 50px;
 	}
+}
+
+#brand-name,
+.navbar-custom-text {
+	color: white;
+}
+
+#brand-name:hover,
+#brand-name:focus,
+.navbar-custom-text:hover,
+.navbar-custom-text:focus {
+	opacity: 0.7;
 }
