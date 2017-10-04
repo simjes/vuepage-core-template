@@ -14,6 +14,14 @@ namespace SimFolio.Models
 
 			var projects = new List<Project>
 			{
+				new Project {Title = "RetroPie Arcade Machine", Description = "Fun summer project.", ImageUrl = "https://i.imgur.com/KMrrJ6r.jpg", ThumbnailUrl = "https://i.imgur.com/KMrrJ6rl.jpg", StartDateTime = new DateTime(2015, 6, 11),
+					Tags = new List<Tag>{ new Tag{Name = "Woodwork"}, new Tag { Name = "Arcade" }, new Tag { Name = "RetroPie" }},
+					UrlLocation = new List<UrlLocation>
+					{
+						new UrlLocation{Name = "Guide", Url = "http://www.instructables.com/id/2-Player-Bartop-Arcade-Machine-Powered-by-Pi/"}
+					},
+					ProjectType = ProjectType.Others
+				},
 				new Project {Title = "React Material", Description = "Portfolio page in React. Using Mui CSS for material design.", ImageUrl = "https://i.imgur.com/NHOwOda.png", ThumbnailUrl = "https://i.imgur.com/NHOwOdal.png", StartDateTime = new DateTime(2016, 1, 10),
 					Tags = new List<Tag>{ new Tag{Name = "React"}, new Tag { Name = "Mui CSS" } },
 					UrlLocation = new List<UrlLocation>

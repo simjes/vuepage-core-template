@@ -43,7 +43,6 @@ export default class HomeComponent extends Vue {
 			.catch(e => {
 				console.log(e);
 			});
-		//$(':checkbox').radiocheck();
 	}
 
 	beforeDestroy() {
