@@ -16,7 +16,6 @@
 					<li>
 						<router-link to="/" :exact="true">
 							<span class="navbar-custom-text"><span class="glyphicon glyphicon-home"></span> Home</span>
-							
 						</router-link>
 					</li>
 					<li>
@@ -30,4 +29,4 @@
 	</div>
 </template>
 
-<style src="./navmenu.css" />
+<style src="./navmenu.css" ></style>

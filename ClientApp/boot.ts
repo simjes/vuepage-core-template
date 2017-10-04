@@ -7,7 +7,7 @@ import VueRouter from 'vue-router';
 import Home from './components/home/home.vue';
 import Counter from './components/counter/counter.vue';
 import FetchData from './components/fetchdata/fetchdata.vue';
-import AboutComponent from "./components/about/about";
+import About from "./components/about/about.vue";
 declare var $: any;
 
 Vue.use(VueRouter);
@@ -15,7 +15,7 @@ Vue.use(Vuex);
 
 const routes = [
 	{ path: '/', component: Home },
-	{ path: '/about', component: AboutComponent}
+	{ path: '/about', component: About}
 ];
 
 const store = new Vuex.Store({

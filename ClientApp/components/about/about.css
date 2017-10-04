@@ -1,1 +1,17 @@
-﻿
+﻿.name-header {
+	margin-top: 2em;
+	color: white;
+}
+
+.contact-icon-link {
+	margin: 20px;
+}
+
+.contact-icon {
+	height: 40px;
+	width: 40px;
+}
+
+#contact-icons {
+	margin-top: 50px;
+}
