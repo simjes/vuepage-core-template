@@ -14,7 +14,7 @@ namespace SimFolio.Models
 
 			var projects = new List<Project>
 			{
-				new Project {Title = "RetroPie Arcade Machine", Description = "Fun summer project.", ImageUrl = "https://i.imgur.com/KMrrJ6r.jpg", ThumbnailUrl = "https://i.imgur.com/KMrrJ6rl.jpg", StartDateTime = new DateTime(2015, 6, 11),
+				new Project {Title = "Arcade Machine", Description = "Fun summer project.", ImageUrl = "https://i.imgur.com/KMrrJ6r.jpg", ThumbnailUrl = "https://i.imgur.com/KMrrJ6rl.jpg", StartDateTime = new DateTime(2015, 6, 11),
 					Tags = new List<Tag>{ new Tag{Name = "Woodwork"}, new Tag { Name = "Arcade" }, new Tag { Name = "RetroPie" }},
 					UrlLocation = new List<UrlLocation>
 					{
