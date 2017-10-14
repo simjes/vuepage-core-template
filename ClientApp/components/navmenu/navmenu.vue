@@ -8,7 +8,7 @@
 					<span class="icon-bar"></span>
 					<span class="icon-bar"></span>
 				</button>
-				<a id="brand-name" class="navbar-brand" href="/">SimFolio</a>
+				<a id="brand-name" class="navbar-brand" href="/">Simjes</a>
 			</div>
 			<!--<div class="clearfix"></div>-->
 			<div class="navbar-collapse collapse">

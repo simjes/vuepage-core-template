@@ -5,8 +5,6 @@ import Vuex from 'vuex'
 import * as jQuery from 'jquery';
 import VueRouter from 'vue-router';
 import Home from './components/home/home.vue';
-import Counter from './components/counter/counter.vue';
-import FetchData from './components/fetchdata/fetchdata.vue';
 import About from "./components/about/about.vue";
 declare var $: any;
 

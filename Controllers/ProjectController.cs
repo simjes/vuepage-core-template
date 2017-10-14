@@ -14,7 +14,6 @@ namespace SimFolio.Controllers
 			_projectService = projectService;
 		}
 
-		// GET: api/Project
 		[HttpGet]
 		public IActionResult Get()
 		{
@@ -23,31 +22,12 @@ namespace SimFolio.Controllers
 			return Ok(projects);
 		}
 
-		// GET: api/Project/5
 		[HttpGet("{id}", Name = "Get")]
 		public IActionResult Get(int id)
 		{
 			var project = _projectService.GetProject(id);
 
 			return Ok(project);
-		}
-
-		// POST: api/Project
-		[HttpPost]
-		public void Post([FromBody]string value)
-		{
-		}
-
-		// PUT: api/Project/5
-		[HttpPut("{id}")]
-		public void Put(int id, [FromBody]string value)
-		{
-		}
-
-		// DELETE: api/ApiWithActions/5
-		[HttpDelete("{id}")]
-		public void Delete(int id)
-		{
 		}
 	}
 }
